@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{{# each allmovies}}
+<a class="btn btn-default" href="/movies">Back</a> 
+
+<div class="container">
+<body class="moviepagecolor">
+		<div class="moviecover">
+			<div class="col-md-8 col-sm-8">	
+				
+				<img class="moviecover" src="{{this.mcover}}" >				
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-4 col-xs-12">
+			<div class="fixedproduct desktop-product">
+				<h3>{{this.mname}}</h3>
+				<h5>{{this.mgenre}}</h5>
+				<h5>Directed by: {{this.mdirector}}</h5>
+				<h6>Released: {{this.mdate}}</h6>
+				<h7> Rating: {{this.mrating}} </h7>
+
+
+
+				</br>
+			</div>
+		</div>
+</div>
+</div>
+{{/ each}}

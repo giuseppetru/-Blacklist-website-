@@ -1,0 +1,32 @@
+<div class="container">
+<form method="post">
+    <h1> Add a new Category </h1>
+    
+      <div class="form-group">
+
+        <label="mid">Movie ID: </label>
+        <input type="double" class="form-control" name="mid">
+
+        <label="mname">Movie Name: </label>
+        <input type="text" class="form-control" name="mname">
+
+        <label="mdate">Date: </label>
+        <input type="text" class="form-control" name="mdate">
+
+        <label="mdirector">Director: </label>
+        <input type="text" class="form-control" name="mdirector">
+
+        <label="mgenre">Genre: </label>
+        <input type="text" class="form-control" name="mgenre">
+
+        <label="mcover">Movie Cover URL: </label>
+        <input type="text" class="form-control" name="mcover">       
+
+        <label="mrating">Rating: </label>
+        <input type="double" class="form-control" name="mrating">
+      </div>
+
+      <input type="hidden" name="_csrf" value="{{csrfToken}}">
+      <button type="submit" class="btn btn-success">Submit</button> 
+    </form>
+<div class="container">

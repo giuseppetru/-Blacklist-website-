@@ -1,0 +1,25 @@
+<div class="container">
+<form method="post">
+    <h1> Add a new Director </h1>
+    
+      <div class="form-group">
+        <label="did">Director ID: </label>
+        <input type="double" class="form-control" name="did">
+
+        <label="dname">Director Name: </label>
+        <input type="text" class="form-control" name="dname">
+
+        <label="ddate">Date of Birth: </label>
+        <input type="text" class="form-control" name="ddate">
+
+        <label="dcover">Photo of Director URL: </label>
+        <input type="text" class="form-control" name="dcover">       
+
+        <label="drating">Ranking: </label>
+        <input type="double" class="form-control" name="drating">
+      </div>
+
+      <input type="hidden" name="_csrf" value="{{csrfToken}}">
+      <button type="submit" class="btn btn-success">Submit</button> 
+    </form>
+<div class="container">

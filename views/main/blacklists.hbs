@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<div class="container">
+<body class="moviepagecolor"
+    <div class="row">
+        {{#each allblacklist}}
+            <div class="col-md-4">
+            <a href="/blacklist/{{this.bid}}">
+                <div class="thumbnail">
+                    <div class="caption">
+                    <h3>{{this.bname}}</h3>     
+                    </div>
+                </div>
+            </a>
+            </div>
+        {{/each}}
+    </div>
+</div>
+</div>

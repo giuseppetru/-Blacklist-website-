@@ -1,0 +1,24 @@
+<div class="container">
+<form method="post">
+    <h1> Add a new blacklist item </h1>
+    
+      <div class="form-group">
+        <label="did">Blacklist ID: </label>
+        <input type="double" class="form-control" name="bid">
+
+        <label="bname">Blacklist Name: </label>
+        <input type="text" class="form-control" name="bname">
+
+        <label="bdirector">Director: </label>
+        <input type="text" class="form-control" name="bdirector">
+
+        <label="bcover">Photo: </label>
+        <input type="text" class="form-control" name="bcover">   
+
+        <label="bgenre">Genre: </label>
+        <input type="text" class="form-control" name="bgenre">    
+
+      <input type="hidden" name="_csrf" value="{{csrfToken}}">
+      <button type="submit" class="btn btn-success">Submit</button> 
+    </form>
+<div class="container">

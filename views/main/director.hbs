@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{{# each alldirectors}}
+<a class="btn btn-default" href="/directors">Back</a> 
+
+<div class="container">
+<body class="moviepagecolor">
+		<div class="moviecover">
+			<div class="col-md-8 col-sm-8">	
+				
+				<img class="moviecover" src="{{this.dcover}}" >				
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-4 col-xs-12">
+			<div class="fixedproduct desktop-product">
+				<h3>{{this.dname}}</h3>
+				<h6>Date of Birth: {{this.ddate}}</h6>
+				<h6>Rating: {{this.drating}}</h6>
+				
+
+
+				</br>
+			</div>
+		</div>
+</div>
+</div>
+{{/ each}}

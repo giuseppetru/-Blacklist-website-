@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{{# each allblacklist}}
+<a class="btn btn-default" href="/blacklists">Back</a> 
+
+<div class="container">
+<body class="moviepagecolor">
+		<div class="moviecover">
+			<div class="col-md-8 col-sm-8">	
+				
+				<img class="moviecover" src="{{this.bcover}}" >				
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-4 col-xs-12">
+			<div class="fixedproduct desktop-product">
+				<h3>{{this.bname}}</h3>
+				<h5>{{this.bgenre}}</h5>
+				<h5>Directed by: {{this.bdirector}}</h5>
+
+			</div>
+		</div>
+</div>
+</div>
+{{/ each}}

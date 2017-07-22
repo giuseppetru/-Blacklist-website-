@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<div class="container">
+<body class="moviepagecolor"
+	<div class="row">
+		{{#each allmovies}}
+			<div class="col-md-4">
+			<a href="/movie/{{this.mid}}">
+				<div class="thumbnail">
+					<div class="caption">
+					<h3>{{this.mname}}</h3>		
+					</div>
+				</div>
+			</a>
+			</div>
+		{{/each}}
+	</div>
+</div>
+</div>
